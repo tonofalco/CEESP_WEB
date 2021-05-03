@@ -1,0 +1,176 @@
+@import url('fuentes.css')
+//-----***COLORES***---
+$gris: #9e9e9e
+$gris_claro: #eeeeee
+$gris_oscuro: #545151
+$azul: #4098d3
+$azul_fondo: #e3eefb
+
+//-----***GLOBAL***-----
+*
+    margin: 0px
+    padding: 0px
+    list-style: none
+    text-decoration: none
+    font-family: sans-serif
+    box-sizing: border-box
+    
+
+body
+    position: relative
+    margin:auto
+    width: 100%
+    height: auto
+    background: $azul_fondo
+
+//-----***HEADER***-----
+header
+    background: $gris_claro
+    margin-bottom: 50px
+    box-shadow: 0px 9px 10px -6px rgba(0,0,0,0.57)
+    border-radius: 0px 0px 10px 10px
+    .logotipo
+        font-size: 50px
+        text-align: center
+        padding: 5px 0px 0px 0px
+        margin: 0px
+        a
+            color: #000
+            font-family: sourcesans-light
+            &:hover
+                text-decoration: none
+    nav ul li a
+        font-size: 21px
+        display: block
+        padding: 10px
+        color: #000
+        text-align: center
+        &:hover
+            text-decoration: none
+            color: #fff
+            background: $azul
+
+//-----***Carousel***-----
+.carousel
+    margin-bottom: 50px
+
+.carousel_contenedor
+    position: relative
+
+.carousel_anterior, .carousel_siguiente 
+    position: absolute
+    display: block
+    width: 30px
+    height: 30px
+    border: none
+    top: calc(50% - 35px)
+    cursor: pointer
+    line-height: 30px
+    text-align: center
+    background: none
+    color: #000000
+    opacity: 20%
+    z-index: 10
+
+.carousel_anterior 
+    left: -70px
+
+
+.carousel_siguiente 
+    right: -50px
+
+
+.carousel_lista 
+    overflow: hidden
+
+
+.carousel_elemento 
+    text-align: center
+
+.carousel_indicadores .glider-dot 
+    opacity: .2
+    background: #949090
+
+.carousel_indicadores .glider-dot:hover 
+    opacity: .7
+
+.carousel_indicadores .glider-dot.active 
+    opacity: 1
+    background: #6890fc
+
+//-----***PRESENTACION***-----
+.presentacion
+    background: $azul
+    padding: 20px
+    margin-bottom: 50px
+    color: #fff
+    line-height: 20px
+    border-radius: 10px 10px 10px 10px
+    box-shadow: 0px 9px 10px -6px rgba(0,0,0,0.57)
+    h5
+        font: 40px sourcesans-light
+    p
+        padding-left: 10px
+        font: 20px sourcesans-light
+
+//-----***CONTENIDO***-----
+.contenido
+    h5
+        font: 54px sourcesans-regular
+        text-align: center 
+        color: $gris_oscuro
+        margin-bottom: 80px
+    .articulo
+        margin-bottom: 70px
+    h3
+        font: 40 sourcesans-regular
+        text-align: center
+        color: #545151
+        margin-bottom: 20px
+    p
+        font: 28px sourcesans-light
+        text-align: center
+        color: #545151
+        
+    img
+        width: 400px
+
+//-----***FOOTER***-----
+footer
+        background: $azul
+        padding: 20px
+        color: #fff
+        line-height: 20px
+        text-align: justify
+        margin-bottom: 20px
+        border-radius: 10px 10px 10px 10px
+        box-shadow: 0px 9px 10px -6px rgba(0,0,0,0.57)
+        h5
+            color: $gris
+            font-size: 26px
+        p  
+            font: 18px sourcesans-regular
+        .redes
+            text-align: center
+            .fb
+                color: #3b5998
+                &:hover
+                    opacity: 0.7
+            .tt
+                color: #00acee
+                &:hover
+                    opacity: 0.7
+            .yt
+                color:  #c4302b
+                &:hover
+                    opacity: 0.7
+            .wa
+                color: #25d366
+                &:hover
+                    opacity: 0.7
+
+.copyright
+    font-size: 12px
+    color: #9B9B9B
+    p
+        margin-bottom: 5px
