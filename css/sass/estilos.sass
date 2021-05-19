@@ -133,7 +133,7 @@ header
         color: #545151
         
     img
-        width: 400px
+        width: 100%
 
 //-----***FOOTER***-----
 footer
@@ -152,6 +152,7 @@ footer
             font: 18px sourcesans-regular
         .redes
             text-align: center
+            margin-top: 5%
             .fb
                 color: #3b5998
                 &:hover
@@ -174,3 +175,16 @@ footer
     color: #9B9B9B
     p
         margin-bottom: 5px
+
+//***---Responsive---***
+@media only screen and (max-width: 600px) 
+    .carousel_anterior, .carousel_siguiente 
+        visibility: hidden
+
+@media only screen and (max-width: 768px) 
+
+    .fb, .tt, .yt, .wa
+        margin-right: 50px
+    .fb
+        margin-left: 25px
+

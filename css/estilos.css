@@ -121,7 +121,7 @@ header {
   color: #545151; }
 
 .contenido img {
-  width: 400px; }
+  width: 100%; }
 
 footer {
   background: #4098d3;
@@ -139,7 +139,8 @@ footer {
   footer p {
     font: 18px sourcesans-regular; }
   footer .redes {
-    text-align: center; }
+    text-align: center;
+    margin-top: 5%; }
     footer .redes .fb {
       color: #3b5998; }
       footer .redes .fb:hover {
@@ -162,4 +163,14 @@ footer {
   color: #9B9B9B; }
   .copyright p {
     margin-bottom: 5px; }
+
+@media only screen and (max-width: 600px) {
+  .carousel_anterior, .carousel_siguiente {
+    visibility: hidden; } }
+
+@media only screen and (max-width: 768px) {
+  .fb, .tt, .yt, .wa {
+    margin-right: 50px; }
+  .fb {
+    margin-left: 25px; } }
 /*# sourceMappingURL=estilos.css.map */
