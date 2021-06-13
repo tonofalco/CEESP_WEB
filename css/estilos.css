@@ -12,7 +12,8 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  background: #e3eefb; }
+  background: #e3eefb;
+  overflow-x: hidden; }
 
 header {
   background: #eeeeee;
@@ -139,8 +140,7 @@ footer {
   footer p {
     font: 18px sourcesans-regular; }
   footer .redes {
-    text-align: center;
-    margin-top: 5%; }
+    text-align: center; }
     footer .redes .fb {
       color: #3b5998; }
       footer .redes .fb:hover {
@@ -157,6 +157,8 @@ footer {
       color: #25d366; }
       footer .redes .wa:hover {
         opacity: 0.7; }
+    footer .redes a i {
+      font-size: 500%; }
 
 .copyright {
   font-size: 12px;
@@ -164,13 +166,21 @@ footer {
   .copyright p {
     margin-bottom: 5px; }
 
-@media only screen and (max-width: 600px) {
-  .carousel_anterior, .carousel_siguiente {
-    visibility: hidden; } }
+@media only screen and (max-width: 992px) {
+  .redes {
+    margin-top: 10%; } }
 
 @media only screen and (max-width: 768px) {
-  .fb, .tt, .yt, .wa {
-    margin-right: 50px; }
-  .fb {
-    margin-left: 25px; } }
+  .redes {
+    margin-top: 0px; }
+    .redes .fb, .redes .tt, .redes .yt, .redes .wa {
+      margin-right: 11%; }
+    .redes .fb {
+      margin-left: 25px; } }
+
+@media only screen and (max-width: 540px) {
+  .carousel_anterior, .carousel_siguiente {
+    visibility: hidden; }
+  footer .redes a i {
+    font-size: 300%; } }
 /*# sourceMappingURL=estilos.css.map */

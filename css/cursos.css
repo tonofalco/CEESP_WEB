@@ -122,7 +122,6 @@ button {
   font-size: 14px; }
 
 footer {
-  z-index: -10;
   background: #4098d3;
   padding: 20px;
   color: #fff;
@@ -155,10 +154,28 @@ footer {
       color: #25d366; }
       footer .redes .wa:hover {
         opacity: 0.7; }
+    footer .redes a i {
+      font-size: 500%; }
 
 .copyright {
   font-size: 12px;
   color: #9B9B9B; }
   .copyright p {
     margin-bottom: 5px; }
+
+@media only screen and (max-width: 992px) {
+  .redes {
+    margin-top: 10%; } }
+
+@media only screen and (max-width: 768px) {
+  .redes {
+    margin-top: 0px; }
+    .redes .fb, .redes .tt, .redes .yt, .redes .wa {
+      margin-right: 11%; }
+    .redes .fb {
+      margin-left: 25px; } }
+
+@media only screen and (max-width: 540px) {
+  footer .redes a i {
+    font-size: 300%; } }
 /*# sourceMappingURL=cursos.css.map */
