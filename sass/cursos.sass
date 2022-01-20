@@ -1,0 +1,132 @@
+@import url('fuentes.css')
+
+
+//-----***COLORES***---
+$gris: #9e9e9e
+$gris_claro: #eeeeee
+$gris_oscuro: #545151
+$azul: #4098d3
+$azul_fondo: #e3eefb
+
+//-----***CURSO***-----
+.texto
+    text-align: center
+    margin-bottom: 50px
+    font-family: SourceSansPro-Regular
+
+.curso
+    background: #faf5f5
+    background-position: 50%
+    width: 80%
+    margin-left: 10%
+    margin-bottom: 30px
+    hr
+        background: #0000002c
+        margin: 0px
+        
+        z-index: 10
+    .contenido
+        padding: 20px 0px
+        &:hover
+            background: #89BEFF
+            opacity: 0.8
+            cursor: pointer
+        img
+            margin-left: 3%
+        
+//----***MODAL***-----
+.modal-container, .modal-container-dos 
+    display: flex
+    background-color: rgba(0, 0, 0, 0.3)
+    align-items: center
+    justify-content: center
+    position: fixed
+    pointer-events: none
+    opacity: 0
+    top: 0
+    left: 0
+    height: 100vh
+    width: 100vw
+    transition: opacity 0.3s ease
+
+button
+    background-color: #47a386
+    border: 0
+    border-radius: 5px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    color: #fff
+    font-size: 14px
+    padding: 10px 25px
+    &:hover
+        opacity: 0.8
+        cursor: pointer
+
+.show 
+    pointer-events: auto
+    opacity: 1
+
+.modal_uno, .modal_dos  
+    background-color: #fff
+    width: 600px
+    max-width: 100%
+    padding: 30px 50px
+    border-radius: 5px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    text-align: center
+    z-index: 10
+
+.modal h1 
+    margin: 0
+
+
+.modal p 
+    opacity: 0.7
+    font-size: 14px
+
+//-----***FOOTER***-----
+footer
+        background: $azul
+        padding: 20px
+        color: #fff
+        line-height: 20px
+        text-align: justify
+        margin-bottom: 20px
+        border-radius: 10px 10px 10px 10px
+        box-shadow: 0px 9px 10px -6px rgba(0,0,0,0.57)
+        h5
+            color: $gris
+            font-size: 26px
+        p  
+            font: 18px sourcesans-regular
+        .redes
+            text-align: center
+            
+            .fb
+                color: #3b5998
+                &:hover
+                    opacity: 0.7
+            .tt
+                color: #00acee
+                &:hover
+                    opacity: 0.7
+            .yt
+                color:  #c4302b
+                &:hover
+                    opacity: 0.7
+            .wa
+                color: #25d366
+                &:hover
+                    opacity: 0.7
+            a i 
+                font-size: 500%
+
+.copyright
+    font-size: 12px
+    color: #9B9B9B
+    p
+        margin-bottom: 5px
+
+
+
+
+
